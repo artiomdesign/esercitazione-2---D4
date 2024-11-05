@@ -1,9 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* ===== HEADER START ===== */
+/* ! ===== HEADER START ===== */
 header{
     background: #232F3E;
 }
@@ -31,9 +32,9 @@ nav a{
     color: #fff;
 }
 
-/* ===== HEADER END ===== */
+/* ! ===== HEADER END ===== */
 
-/* ===== MAIN START ===== */
+/* ! ===== MAIN START ===== */
 
 main{
     display: flex;
@@ -99,8 +100,9 @@ main a{
 .cont-cards{
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 2em;
+    justify-content: space-between;
+    padding: 0 3em 2em 3em;
+    
 }
 
 .card{
@@ -123,52 +125,55 @@ img{
     width: 100%;
 }
 
-/* ===== EXTRA START ===== */
-#conts-extra{
-    width: 100%;
+/* ! ===== EXTRA START ===== */
+#cont-extra{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.section{
+    margin: 1em;
+    padding: 2em;
     background-color: #fff;
 }
 
-.cont-extra1{
-    display: flex;
-    justify-content: space-around;
-    gap: 1em;
-    padding: 1em;
-    width: 1 1 calc(25% - 1em);
-    border: 2px solid blue;
+.section h2{
+    margin-bottom: 1.5em;
 }
 
-.cont-extra1 h2{
-    border: 2px solid green;
-    width: 100%;
-    text-align: center;
+.section a{
+    display: inline-block;
+    margin-top: 1em;
 }
 
-.cont-4img-extra{
+.items{
     display: flex;
     flex-wrap: wrap;
-
-    border: 2px solid red;
+    gap: 1em;
+    margin-bottom: 1.5em;
 }
 
-.cont-img-extra{
-    border: 2px solid violet;
+.item{
+    width: 7.3em;
+    height: 7.3em;
+    aspect-ratio: 1 / 1;
 }
 
-.cont-img-extra img{
-    border: 2px solid yellow;
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.cont-img-extra p{
-    border: 2px solid azure;
 
-}
-/* ===== EXTRA END ===== */
+/* ! ===== EXTRA END ===== */
 
 
-/* ===== MAIN END ===== */
+/* ! ===== MAIN END ===== */
 
-/* ===== FOOTER START ===== */
+/* ! ===== FOOTER START ===== */
 footer{
     background-color: #232F3E;
     display: flex;
@@ -193,4 +198,4 @@ footer a{
 .footer-bottom img{
     width: 5em;
 }
-
+/* ! ===== FOOTER END ===== */
